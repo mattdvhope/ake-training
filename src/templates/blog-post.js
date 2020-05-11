@@ -47,7 +47,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1.4),
           }}
         >
-          <Link to="/">← Back to Posts</Link>
+          <Link to="/">← กลับสู่หน้าแรก</Link>
         </div>
         <h1
           style={{
@@ -56,7 +56,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.title}
         </h1>
-        <p
+    {/* <p
           style={{
             ...scale(-1 / 5),
             display: 'block',
@@ -65,8 +65,8 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.created}
-        </p>
-        <BackgroundImage
+        </p>  JSX Comment */}
+    {/* <BackgroundImage
           Tag="div"
           className="post-hero"
           fluid={post.metadata.hero.local.childImageSharp.fluid}
@@ -74,11 +74,16 @@ class BlogPostTemplate extends React.Component {
           style={{
             marginBottom: rhythm(0.6),
           }}
-        />
+        />  */}    
         <div
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/i103Fph3Lr4?feature=youtu.be&fbclid=IwAR3Dt3Q3_dlyVdlBkXPlJMoMW9APlBi7eVO3XwD9VbMi4m8y4w_ASZE2TMY" frameBorder="0" allowFullScreen></iframe>
+        </div>
+
         <hr
           style={{
             marginBottom: rhythm(1),
